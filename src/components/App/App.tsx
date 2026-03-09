@@ -52,7 +52,7 @@ const App = () => {
                     positiveRate={positiveRate}
                 />
             )}
-            <Notification />
+            {totalVotes === 0 && <Notification />}
         </div>
 
     );
